@@ -133,7 +133,7 @@ class GradesWindow(QMainWindow):
             "About",
             "Grades Updater App\n"
             "Created by: Yuval Barkai\n"
-            "GitHub: https://github.com/YOUR_USERNAME/YOUR_REPO",
+            "GitHub: https://github.com/YUVAL BARKAI",
         )
 
 
