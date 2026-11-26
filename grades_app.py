@@ -1,6 +1,7 @@
 import os
 import subprocess
 import sys
+from About import AboutWindow
 
 from PySide6.QtWidgets import (
     QApplication,
@@ -128,13 +129,8 @@ class GradesWindow(QMainWindow):
             subprocess.call(["xdg-open", self.selected_file])
 
     def show_about(self):
-        QMessageBox.information(
-            self,
-            "About",
-            "Grades Updater App\n"
-            "Created by: Yuval Barkai\n"
-            "GitHub: https://github.com/YUVAL BARKAI",
-        )
+        self.about_window = AboutWindow()
+        self.about_window.show()
 
 
 if __name__ == "__main__":

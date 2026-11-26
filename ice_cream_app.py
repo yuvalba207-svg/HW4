@@ -1,5 +1,6 @@
 import sys
 
+from About import AboutWindow
 import numpy as np
 from matplotlib.backends.backend_qtagg import (
     FigureCanvasQTAgg,
@@ -103,13 +104,8 @@ class IceCreamWindow(QMainWindow):
         self.canvas.draw()
 
     def show_about(self):
-        QMessageBox.information(
-            self,
-            "About",
-            "Ice Cream Revenue Plotter\n"
-            "Created by: Yuval Barkai\n"
-            "GitHub: https://github.com/YUVAL BARKAI",
-        )
+        self.about_window = AboutWindow()
+        self.about_window.show()
 
 
 if __name__ == "__main__":
